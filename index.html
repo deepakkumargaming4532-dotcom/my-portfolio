@@ -1,115 +1,56 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio Slides</title>
-  <style>
-    * {margin:0; padding:0; box-sizing:border-box;}
-    body {
-      font-family: Arial, sans-serif;
-      background: #2c3e50;
-      color: white;
-      overflow: hidden;
-    }
-    .slide {
-      width: 100vw;
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      position: absolute;
-      top: 0;
-      left: 100%;
-      transition: left 0.7s ease-in-out;
-      padding: 40px;
-      text-align: center;
-    }
-    .slide.active { left: 0; }
-    .slide h1, .slide h2 { margin-bottom: 15px; }
-    nav {
-      position: fixed;
-      bottom: 20px;
-      width: 100%;
-      text-align: center;
-    }
-    button {
-      padding: 10px 20px;
-      margin: 0 10px;
-      border: none;
-      border-radius: 5px;
-      background: #3498db;
-      color: white;
-      font-size: 16px;
-      cursor: pointer;
-    }
-    button:hover { background: #2980b9; }
-  </style>
-</head>
-<body>
-
-  <!-- Slide 1: Home -->
-  <div class="slide active" id="slide1">
-    <h1>Hello, I'm Deepak Kumar</h1>
-    <p>Welcome to my portfolio website.</p>
-  </div>
-
-  <!-- Slide 2: About -->
-  <div class="slide" id="slide2">
-    <h2>About Me</h2>
-    <p>I am a student and developer, passionate about technology and coding.</p>
-  </div>
-
-  <!-- Slide 3: Skills -->
-  <div class="slide" id="slide3">
-    <h2>My Skills</h2>
-    <p>HTML | CSS | JavaScript | Python | Cyber Security</p>
-  </div>
-
-  <!-- Slide 4: Projects -->
-  <div class="slide" id="slide4">
-    <h2>Projects</h2>
-    <p>1. Portfolio Website<br>2. To-Do App<br>3. Python Calculator</p>
-  </div>
-
-  <!-- Slide 5: Contact -->
-  <div class="slide" id="slide5">
-    <h2>Contact Me</h2>
-    <p>Email: yourname@gmail.com<br>Phone: +91-XXXXXXXXXX</p>
-  </div>
-
-  <!-- Navigation -->
-  <nav>
-    <button onclick="prevSlide()">⬅ Previous</button>
-    <button onclick="nextSlide()">Next ➡</button>
-  </nav>
-
-  <script>
-    let currentSlide = 0;
-    const slides = document.querySelectorAll('.slide');
-
-    function showSlide(index) {
-      slides.forEach((slide, i) => {
-        slide.classList.remove('active');
-        slide.style.left = (i - index) * 100 + '%';
-      });
-      slides[index].classList.add('active');
-    }
-
-    function nextSlide() {
-      currentSlide = (currentSlide + 1) % slides.length;
-      showSlide(currentSlide);
-    }
-
-    function prevSlide() {
-      currentSlide = (currentSlide - 1 + slides.length) % slides.length;
-      showSlide(currentSlide);
-    }
-
-    // Initialize positions
-    showSlide(currentSlide);
-  </script>
-
-</body>
+<!DOCTYPE html>  <html lang="en">  
+<head>  
+  <meta charset="UTF-8">  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <title>My Portfolio</title>  
+  <style>  
+    body {  
+      margin: 0;  
+      font-family: Arial, sans-serif;  
+      overflow-x: hidden;  
+    }  
+    .slide {  
+      height: 100vh;  
+      display: flex;  
+      align-items: center;  
+      justify-content: center;  
+      font-size: 2em;  
+      color: white;  
+    }  
+    .slide1 { background: #0077b6; }  
+    .slide2 { background: #00b4d8; }  
+    .slide3 { background: #90e0ef; color: black; }  
+    nav {  
+      position: fixed;  
+      top: 10px;  
+      right: 10px;  
+    }  
+    nav a {  
+      margin: 0 5px;  
+      padding: 10px 15px;  
+      background: white;  
+      color: black;  
+      text-decoration: none;  
+      border-radius: 5px;  
+    }  
+    nav a:hover {  
+      background: lightgray;  
+    }  
+  </style>  
+</head>  
+<body>  
+  <nav>  
+    <a href="#slide1">Home</a>  
+    <a href="#slide2">About</a>  
+    <a href="#slide3">Contact</a>  
+  </nav>    <section id="slide1" class="slide slide1">  
+    <h1>👋 Welcome to My Portfolio</h1>  
+  </section>    <section id="slide2" class="slide slide2">  
+    <h1>📖 About Me</h1>  
+    <p>I am learning web development and building my portfolio!</p>  
+  </section>    <section id="slide3" class="slide slide3">  
+    <h1>📩 Contact</h1>  
+    <p>Email: myemail@example.com</p>  
+  </section>  
+</body>  
 </html>
