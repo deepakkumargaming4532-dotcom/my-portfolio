@@ -1,56 +1,92 @@
-<!DOCTYPE html>  <html lang="en">  
-<head>  
-  <meta charset="UTF-8">  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-  <title>My Portfolio</title>  
-  <style>  
-    body {  
-      margin: 0;  
-      font-family: Arial, sans-serif;  
-      overflow-x: hidden;  
-    }  
-    .slide {  
-      height: 100vh;  
-      display: flex;  
-      align-items: center;  
-      justify-content: center;  
-      font-size: 2em;  
-      color: white;  
-    }  
-    .slide1 { background: #0077b6; }  
-    .slide2 { background: #00b4d8; }  
-    .slide3 { background: #90e0ef; color: black; }  
-    nav {  
-      position: fixed;  
-      top: 10px;  
-      right: 10px;  
-    }  
-    nav a {  
-      margin: 0 5px;  
-      padding: 10px 15px;  
-      background: white;  
-      color: black;  
-      text-decoration: none;  
-      border-radius: 5px;  
-    }  
-    nav a:hover {  
-      background: lightgray;  
-    }  
-  </style>  
-</head>  
-<body>  
-  <nav>  
-    <a href="#slide1">Home</a>  
-    <a href="#slide2">About</a>  
-    <a href="#slide3">Contact</a>  
-  </nav>    <section id="slide1" class="slide slide1">  
-    <h1>👋 Welcome to My Portfolio</h1>  
-  </section>    <section id="slide2" class="slide slide2">  
-    <h1>📖 About Me</h1>  
-    <p>I am learning web development and building my portfolio!</p>  
-  </section>    <section id="slide3" class="slide slide3">  
-    <h1>📩 Contact</h1>  
-    <p>Email: myemail@example.com</p>  
-  </section>  
-</body>  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hitendra Kumar - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#interests">Interests</a>
+    <a href="#motivation">Motivation</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home" class="section home-section">
+    <img src="myphoto.jpg" alt="My Photo" class="profile-photo zoom-in">
+    <h1>👋 Hi, I'm <span class="highlight">Hitendra Kumar</span></h1>
+    <p>A student from Jharkhand, passionate about learning and creating!</p>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <div class="about-box">
+      <p>Hello! My name is <strong>Hitendra Kumar</strong>. I am passionate about learning and growing in the field of web development. I enjoy exploring new technologies and building creative projects.</p>
+      
+      <h3>My Bio Data</h3>
+      <ul>
+        <li><strong>Education:</strong> Completed schooling, currently enhancing my technical skills</li>
+        <li><strong>Experience:</strong> 2+ years of self-learning and project-based practice</li>
+        <li><strong>Hobbies:</strong> Playing Cricket 🏏, Learning Coding 💻</li>
+        <li><strong>Address:</strong> Jharkhand, India</li>
+      </ul>
+      
+      <p>My journey started with curiosity, and now I am working step by step to become a skilled developer and create amazing websites.</p>
+    </div>
+  </section>
+
+  <!-- Interests & Goals Section -->
+  <section id="interests" class="section">
+    <div class="interests-box">
+      <h2>My Interests</h2>
+      <ul>
+        <li>🏏 Playing Cricket with friends</li>
+        <li>💻 Exploring Computers & Technology</li>
+        <li>🎶 Listening to Music</li>
+        <li>📚 Reading and Learning new things</li>
+      </ul>
+
+      <h2>My Future Goals</h2>
+      <p>
+        I want to continue learning and growing in the field of technology.  
+        My dream is to become a <strong>web developer</strong> and build creative, useful websites that can help others.  
+        Step by step, I am working on my knowledge and passion to make this dream a reality.
+      </p>
+    </div>
+  </section>
+
+  <!-- Motivation Section -->
+  <section id="motivation" class="section">
+    <div class="motivation-box fade-in">
+      <h2>My Motivation</h2>
+      <p>
+        I was motivated to learn coding and web development by my friend 
+        <strong>Naman <span class="heart">❤</span></strong>.  
+        His guidance and encouragement inspired me to start this journey and build my own websites.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <h2>Contact Me</h2>
+    <p>📩 Email: <a href="mailto:hitendrak694@gmail.com">hitendrak694@gmail.com</a></p>
+    <p>📷 Instagram: <a href="https://www.instagram.com/hitend_ra_007" target="_blank">@hitend_ra_007</a></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>Made with ❤ by <strong>Hitendra Kumar</strong></p>
+    <p>📩 Email: <a href="mailto:hitendrak694@gmail.com">hitendrak694@gmail.com</a></p>
+    <p>📷 Instagram: <a href="https://www.instagram.com/hitend_ra_007" target="_blank">@hitend_ra_007</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
