@@ -13,18 +13,19 @@
     <a href="#about">About</a>
     <a href="#interests">Interests</a>
     <a href="#motivation">Motivation</a>
+    <a href="#inspiration">Inspiration</a>
     <a href="#contact">Contact</a>
   </nav>
 
   <!-- Home Section -->
-  <section id="home" class="section home-section">
+  <section id="home" class="section home-section fade-in">
     <img src="myphoto.jpg" alt="My Photo" class="profile-photo zoom-in">
     <h1>👋 Hi, I'm <span class="highlight">Hitendra Kumar</span></h1>
-    <p>A student from Jharkhand, passionate about learning and creating!</p>
+    <p class="tagline">A student from Jharkhand, passionate about learning and creating!</p>
   </section>
 
   <!-- About Section -->
-  <section id="about" class="section">
+  <section id="about" class="section slide-left">
     <h2>About Me</h2>
     <div class="about-box">
       <p>Hello! My name is <strong>Hitendra Kumar</strong>. I am passionate about learning and growing in the field of web development. I enjoy exploring new technologies and building creative projects.</p>
@@ -42,7 +43,7 @@
   </section>
 
   <!-- Interests & Goals Section -->
-  <section id="interests" class="section">
+  <section id="interests" class="section slide-right">
     <div class="interests-box">
       <h2>My Interests</h2>
       <ul>
@@ -62,8 +63,8 @@
   </section>
 
   <!-- Motivation Section -->
-  <section id="motivation" class="section">
-    <div class="motivation-box fade-in">
+  <section id="motivation" class="section fade-in">
+    <div class="motivation-box">
       <h2>My Motivation</h2>
       <p>
         I was motivated to learn coding and web development by my friend 
@@ -73,18 +74,40 @@
     </div>
   </section>
 
+  <!-- Inspiration Section (MS Dhoni) -->
+  <section id="inspiration" class="section slide-left">
+    <div class="inspiration-section">
+      <h2>My Inspiration</h2>
+      <img src="msdhoni.jpg" alt="MS Dhoni" class="inspiration-photo">
+      <p>
+        MS Dhoni has always been my role model. His calmness, leadership, and ability to perform under pressure inspire me to stay strong in every situation.  
+        Just like Dhoni leads his team with confidence, I aim to lead my life with the same positivity and determination.  
+      </p>
+      <p class="quote">"Face challenges with a smile and never give up — that's what true champions do!"</p>
+    </div>
+  </section>
+
   <!-- Contact Section -->
-  <section id="contact" class="section">
+  <section id="contact" class="section slide-right">
     <h2>Contact Me</h2>
     <p>📩 Email: <a href="mailto:hitendrak694@gmail.com">hitendrak694@gmail.com</a></p>
     <p>📷 Instagram: <a href="https://www.instagram.com/hitend_ra_007" target="_blank">@hitend_ra_007</a></p>
+
+    <!-- Contact Form -->
+    <div class="contact-form">
+      <h3>Send Me a Message</h3>
+      <form action="https://formspree.io/f/movqkvkk" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
   </section>
 
   <!-- Footer -->
   <footer>
     <p>Made with ❤ by <strong>Hitendra Kumar</strong></p>
-    <p>📩 Email: <a href="mailto:hitendrak694@gmail.com">hitendrak694@gmail.com</a></p>
-    <p>📷 Instagram: <a href="https://www.instagram.com/hitend_ra_007" target="_blank">@hitend_ra_007</a></p>
   </footer>
 
   <script src="script.js"></script>
