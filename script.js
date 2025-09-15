@@ -58,3 +58,14 @@ function spawnEmoji() {
   setTimeout(() => emoji.remove(), 6000);
 }
 setInterval(spawnEmoji, 1000);
+document.addEventListener("scroll", function () {
+  const motivationQuote = document.querySelector(".quote.typing");
+  const rect = motivationQuote.getBoundingClientRect();
+
+  if (rect.top < window.innerHeight - 100 && rect.bottom > 0) {
+    // Restart animation
+    motivationQuote.style.animation = "none";
+    motivationQuote.offsetHeight; // trigger reflow
+    motivationQuote.style.animation = null;
+  }
+});
