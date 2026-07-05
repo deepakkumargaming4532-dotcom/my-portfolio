@@ -9,3 +9,31 @@ document.addEventListener("scroll", function () {
     }
   });
 });
+const text = [
+  "💻 Frontend Developer",
+  "📚 Web Designer",
+  "🏋️ Fitness Enthusiast"
+];
+let index = 0;
+const typing = document.getElementById("typing");
+
+function changeText() {
+    typing.textContent = text[index];
+    index = (index + 1) % text.length;
+}
+
+changeText();
+setInterval(changeText, 2000);
+const slides = document.querySelectorAll(".slide");
+
+let current = 0;
+
+setInterval(() => {
+
+    slides[current].classList.remove("active");
+
+    current = (current + 1) % slides.length;
+
+    slides[current].classList.add("active");
+
+},3000);
